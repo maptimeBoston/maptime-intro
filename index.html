@@ -126,6 +126,17 @@
 		.code{
 			font-family: 'Courier New';
 		}
+
+    blink, .blink {
+      -webkit-animation: blink 1s step-end infinite;
+      -moz-animation: blink 1s step-end infinite;
+      -o-animation: blink 1s step-end infinite;
+      animation: blink 1s step-end infinite;
+    }
+    @-webkit-keyframes blink { 67% { opacity: 0 }}
+    @-moz-keyframes blink {  67% { opacity: 0 }}
+    @-o-keyframes blink {  67% { opacity: 0 }}
+    @keyframes blink {  67% { opacity: 0 }}
 	</style>
 </head>
 <body>
@@ -208,12 +219,15 @@
   </p>
 </div>
 
-<div class="slide">
+<div class="slide image_bottom">
+  <img src="images/sotmus.png"/>
   <p>
   State of the Map US<br>
   <a href="https://2019.stateofthemap.us/">
     https://2019.stateofthemap.us/
-  </a>
+  </a><br>
+  Discount code <blink style="color:red">MEETUP</blink>!
+  
   </p>
 </div>
 
@@ -222,6 +236,20 @@
   Thank you to CIC for hosting us!<br><br>
   Thank you to Axis Maps for sponsoring food!<br><br>
   Please get in touch if you can help sponsor future events!
+  </p>
+</div>
+
+<div class="slide">
+  <p style="font-size: 75%; line-height: 90%;">
+  Thank you to members who have donated! Small donations help cover:<br>
+  <span style="font-size:50%">
+  - Meetup.com fees, nearly $200/year! :(<br>
+  - Food if not sponsored ($50+ per event)<br>
+  - Occasional supplies (e.g. for hand-drawn map events)<br></span>
+  Venmo: @awoodruff (Andrew Woodruff)<br>
+  <span style="font-size:50%">(^ Leave a fun note or emoji!)</span><br>
+  or cash in the donation cups!
+  </span>
   </p>
 </div>
 
